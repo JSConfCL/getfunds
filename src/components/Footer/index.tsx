@@ -21,7 +21,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="container flex flex-col items-center justify-between gap-4 lg:my-0 lg:h-[60px] lg:flex-row">
+    <footer className="container flex flex-col items-center justify-between gap-4 py-3 lg:my-0 lg:h-[60px] lg:flex-row">
       <div className="flex justify-center gap-4">
         <a
           target="_blank"

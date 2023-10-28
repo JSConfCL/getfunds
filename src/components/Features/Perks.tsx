@@ -16,9 +16,8 @@ export const Perks = () => {
           <p className="text-base sm:text-sm lg:text-base">
             Estamos agradecidos de todos quienes nos apoyan! Sus contribuciónes
             no solo ayudan a mantener vivas nuestras iniciativas, también juegan
-            un papel vital también juega un papel vital en desarrollo
-            tecnológico en Chile. Por eso queremos agradecerles con algunos
-            beneficios.
+            un papel vital en el desarrollo tecnológico en Chile. Por eso
+            queremos agradecerles con algunos beneficios.
           </p>
         </div>
         <div className="flex flex-col gap-4">
