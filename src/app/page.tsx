@@ -74,7 +74,7 @@ const donationOptions = [
     title: '10 Lucas',
     size: 'lg:col-span-4',
     amount: 10000,
-    href: "http://mpago.la/2a4gTpv",
+    href: "https://mpago.la/2a4gTpv",
     icon: (
       <>
         <Banknote className="inline rotate-12 transition group-hover:rotate-45" size={48} />
