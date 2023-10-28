@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Banknote, CalendarClock } from 'lucide-react';
+import { Banknote, CalendarClock, Wallet } from 'lucide-react';
 
 import { buttonVariants } from "@/components/ui/button"
 
@@ -51,7 +51,7 @@ const donationOptions = [
   {
     id: '1Luka',
     title: '1 Luca',
-    size: 'lg:col-span-3',
+    size: 'lg:col-span-4',
     amount: 1000,
     href: "https://mpago.la/1RX3F29",
     icon: <Banknote className="inline rotate-12 transition group-hover:rotate-45" size={48} />
@@ -59,7 +59,7 @@ const donationOptions = [
   {
     id: '5Lukas',
     title: '5 Lucas',
-    size: 'lg:col-span-3',
+    size: 'lg:col-span-4',
     amount: 5000,
     href: "https://mpago.la/1jvHK63",
     icon: (
@@ -72,9 +72,9 @@ const donationOptions = [
   {
     id: '10Lukas',
     title: '10 Lucas',
-    size: 'lg:col-span-3',
+    size: 'lg:col-span-4',
     amount: 10000,
-    href: "http://mpago.la/2a4gTpv",
+    href: "https://mpago.la/2a4gTpv",
     icon: (
       <>
         <Banknote className="inline rotate-12 transition group-hover:rotate-45" size={48} />
@@ -84,15 +84,23 @@ const donationOptions = [
     )
   },
   {
+    id: 'Otro Valor',
+    title: 'Otro Valor',
+    size: 'lg:col-span-6',
+    href: "https://link.mercadopago.cl/jscl",
+    icon: <Wallet className="inline rotate-12 transition group-hover:-rotate-45" size={48} />
+  },
+  {
     id: 'DonaciónMensual',
     title: 'Donación Mensual',
-    size: 'lg:col-span-3',
+    size: 'lg:col-span-6',
     amount: null,
     href: "https://www.mercadopago.cl/subscriptions/checkout?preapproval_plan_id=2c93808489cf38670189d2bb9af20176",
     icon: <CalendarClock className="inline transition group-hover:rotate-12" size={48} />
-  }, {
+  },
+  {
     href: "mailto:contacto@jschile.org",
-    size: 'lg:col-span-5',
+    size: 'lg:col-span-12',
     children: (
       <>
         <h2 className="text-base font-bold lg:text-lg">Eres compañía</h2>
@@ -173,7 +181,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full bg-white">
-        <div className="container mb-8 grid grid-cols-11 gap-4 pt-8 text-center lg:mt-0 lg:text-left">
+        <div className="container mt-8">
           <div className="col-span-12 lg:col-span-5">
             <h2 id="donations" className="mb-2 text-3xl font-bold lg:text-4xl">
               <span className="after:whitespace-pre after:content-['\a']">Donar,</span>
@@ -181,6 +189,8 @@ export default function Home() {
             </h2>
             <p className="mb-4 text-base">Para poder llevar a cabo los distintos tipos de eventos mensuales debemos invertir mucho dinero. Tu apoyo nos permitirá seguir brindando experiencias enriquecedoras para la comunidad tech chilena. ¿Deseas ayudar?</p>
           </div>
+        </div>
+        <div className="container mb-8 grid grid-cols-12 gap-4 pt-8 text-center lg:mt-0 lg:text-left">
           {donationOptions.map(donationOption => donationOption.children ? (
             <Card
               key={donationOption.id}
