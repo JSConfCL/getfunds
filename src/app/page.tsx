@@ -40,8 +40,6 @@ export const metadata = {
   // Twitter
   twitter: {
     card: "summary_large_image",
-    domain: "jschile.org",
-    url,
     title,
     description,
     images,
