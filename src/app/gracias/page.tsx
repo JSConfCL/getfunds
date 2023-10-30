@@ -1,5 +1,12 @@
 import React from "react";
 
+import { getMetaData } from "@/lib/metadata";
+const title = "Gracias por donar | JSCL";
+const description =
+  "Gracias por donar a JavaScript Chile | Ayudando a promover el desarrollo tecnológico y el apredizaje en Chile.";
+
+export const metadata = getMetaData({ title, description })
+
 export default function Gracias() {
   return (
     <main className="flex flex-1 flex-col items-center justify-center gap-12 transition-all">
