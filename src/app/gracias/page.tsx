@@ -15,8 +15,8 @@ export default function Gracias() {
         <p>A nombre de toda la comunidad de JavaScript Chile.</p>
         <p>
           Tu apoyo no solo nos ayuda a mantener vivas nuestras iniciativas, si
-          no que también juega un papel vital también en el desarrollo de la
-          comunidad de tecnología en Chile.
+          no que también juega un papel vital en el desarrollo de la comunidad
+          de tecnología en Chile.
         </p>
       </div>
     </main>
