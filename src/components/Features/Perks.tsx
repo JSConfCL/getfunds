@@ -1,6 +1,25 @@
 import React from "react";
 import { Card } from "../ui/Card";
 
+const PerkCard = ({
+  title,
+  description,
+}: {
+  title: string;
+  description: React.ReactNode;
+}) => {
+  return (
+    <Card size="col-span-12 xs:col-span-6 sm:col-span-4 lg:col-span-4 xl:col-span-3">
+      <div className="flex flex-col gap-2">
+        <h3 className="text-sm font-bold transition-all sm:text-base md:text-xl">
+          {title}
+        </h3>
+        <p className="text-sm xs:text-xs lg:text-base">{description}</p>
+      </div>
+    </Card>
+  );
+};
+
 export const Perks = () => {
   return (
     // <div className="">
@@ -27,17 +46,10 @@ export const Perks = () => {
             </span>
           </h2>
           <div className="grid grid-cols-12 gap-6">
-            <Card size="col-span-6 sm:col-span-4 lg:col-span-4 xl:col-span-3">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-base font-bold transition-all md:text-xl">
-                  Wall of Fame
-                </h3>
-                <p className="text-sm lg:text-base">
-                  Se parte del wall-of-fame de donadores de JavascriptChile
-                  durante 3 meses
-                </p>
-              </div>
-            </Card>
+            <PerkCard
+              title="Wall of Fame"
+              description="Se parte del wall-of-fame de donadores de JavascriptChile"
+            />
           </div>
         </div>
         <div className="flex flex-col gap-4">
@@ -47,38 +59,18 @@ export const Perks = () => {
             </span>
           </h2>
           <div className="grid grid-cols-12 gap-6">
-            <Card size="col-span-6 sm:col-span-4 lg:col-span-4 xl:col-span-3">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-base font-bold transition-all md:text-xl">
-                  Wall of Fame
-                </h3>
-                <p className="text-sm lg:text-base">
-                  Se parte del wall-of-fame de donadores de JavascriptChile
-                </p>
-              </div>
-            </Card>
-            <Card size="col-span-6 sm:col-span-4 lg:col-span-4 xl:col-span-3">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-base font-bold transition-all md:text-xl">
-                  Entra antes!
-                </h3>
-                <p className="text-sm lg:text-base">
-                  Recibe los correos de los eventos de JavascriptChile, un
-                  poquito antes que el resto de la comunidad.
-                </p>
-              </div>
-            </Card>
-            <Card size="col-span-6 sm:col-span-4 lg:col-span-4 xl:col-span-3">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-base font-bold transition-all md:text-xl">
-                  Discord VIP ⭐️
-                </h3>
-                <p className="text-sm lg:text-base">
-                  Accede al canal VIP <b>(Very Interesting Programming)</b> de
-                  Discord. Se parte del futuro de JavascriptChile.
-                </p>
-              </div>
-            </Card>
+            <PerkCard
+              title="Wall of Fame"
+              description="Se parte del wall-of-fame de donadores de JavascriptChile"
+            />
+            <PerkCard
+              title="Entra antes!"
+              description="Recibe los correos de los eventos de JavascriptChile, un poquito antes que el resto de la comunidad."
+            />
+            <PerkCard
+              title="Discord VIP ⭐️"
+              description="Accede al canal VIP (Very Interesting Programming) de Discord. Se parte del futuro de JavascriptChile."
+            />
           </div>
         </div>
         <div className="flex flex-col gap-4">
@@ -88,71 +80,30 @@ export const Perks = () => {
             </span>
           </h2>
           <div className="grid grid-cols-12 gap-6">
-            <Card size="col-span-6 sm:col-span-4 lg:col-span-4 xl:col-span-3">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-base font-bold transition-all md:text-xl">
-                  Wall of Fame
-                </h3>
-                <p className="text-sm lg:text-base">
-                  Se parte del wall-of-fame de donadores de JavascriptChile
-                </p>
-              </div>
-            </Card>
-            <Card size="col-span-6 sm:col-span-4 lg:col-span-4 xl:col-span-3">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-base font-bold transition-all md:text-xl">
-                  Entra antes!
-                </h3>
-                <p className="text-sm lg:text-base">
-                  Recibe los correos de los eventos de JavascriptChile, un
-                  poquito antes que el resto de la comunidad.
-                </p>
-              </div>
-            </Card>
-            <Card size="col-span-6 sm:col-span-4 lg:col-span-4 xl:col-span-3">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-base font-bold transition-all md:text-xl">
-                  Discord VIP ⭐️
-                </h3>
-                <p className="text-sm lg:text-base">
-                  Accede al canal VIP <b>(Very Interesting Programming)</b> de
-                  Discord. Se parte del futuro de JavascriptChile.
-                </p>
-              </div>
-            </Card>
-            <Card size="col-span-6 sm:col-span-4 lg:col-span-4 xl:col-span-3">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-base font-bold transition-all md:text-xl">
-                  Kit de bienvenida 🔥
-                </h3>
-                <p className="text-sm lg:text-base">
-                  Déjanos tu dirección, para hacerte llegar un kit de bienvenida
-                  a la comunidad mas cool de Javacript en Chile!
-                </p>
-              </div>
-            </Card>
-            <Card size="col-span-6 sm:col-span-4 lg:col-span-4 xl:col-span-3">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-base font-bold transition-all md:text-xl">
-                  418 Agradecimientos 🎙️
-                </h3>
-                <p className="text-sm lg:text-base">
-                  Recibe un agradecimiento en los episodios de 418, el
-                  Livestream/Podcast de la comunidad de JavascriptChile.
-                </p>
-              </div>
-            </Card>
-            <Card size="col-span-6 sm:col-span-4 lg:col-span-4 xl:col-span-3">
-              <div className="flex flex-col gap-2">
-                <h3 className="text-base font-bold transition-all md:text-xl">
-                  Y más!
-                </h3>
-                <p className="text-sm lg:text-base">
-                  Constantemente estamos buscando mas beneficios para nuestros
-                  donadores ❤️
-                </p>
-              </div>
-            </Card>
+            <PerkCard
+              title="Wall of Fame"
+              description="Se parte del wall-of-fame de donadores de JavascriptChile"
+            />
+            <PerkCard
+              title="Entra antes!"
+              description="Recibe los correos de los eventos de JavascriptChile, un poquito antes que el resto de la comunidad."
+            />
+            <PerkCard
+              title="Discord VIP ⭐️"
+              description="Accede al canal VIP (Very Interesting Programming) de Discord. Se parte del futuro de JavascriptChile."
+            />
+            <PerkCard
+              title="Kit de bienvenida 🔥"
+              description="Déjanos tu dirección, para hacerte llegar un kit de bienvenida a la comunidad mas cool de Javacript en Chile!"
+            />
+            <PerkCard
+              title="Agradecimiento en 418 🎙️"
+              description="Recibe un agradecimiento en los episodios de 418, el Livestream/Podcast de la comunidad de JavascriptChile."
+            />
+            <PerkCard
+              title="Stickers de JavascriptChile 🤩"
+              description="Recibe un pack de stickers de JavascriptChile"
+            />
           </div>
         </div>
       </div>

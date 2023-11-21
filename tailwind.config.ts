@@ -1,11 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   darkMode: ["class"],
-  content: [
-    './src/**/*.{ts,tsx}',
-  ],
+  content: ["./src/**/*.{ts,tsx}"],
   theme: {
     container: {
       center: true,
@@ -15,14 +13,17 @@ const config: Config = {
       },
     },
     extend: {
+      screens: {
+        xs: "425px",
+      },
       colors: {
         jscl: {
           yellow: {
-            DEFAULT:  '#eacf39'
+            DEFAULT: "#eacf39",
           },
           black: {
-            DEFAULT:  '#333'
-          }
+            DEFAULT: "#333",
+          },
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -74,9 +75,9 @@ const config: Config = {
         },
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -85,6 +86,6 @@ const config: Config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
 
 export default config;
