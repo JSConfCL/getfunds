@@ -39,7 +39,7 @@ export const AboutUs = () => {
         <div className="">
           <Link
             href="#donations"
-            className={`mr-2 mb-2 ${buttonVariants({
+            className={`mb-2 mr-2 ${buttonVariants({
               variant: "default",
             })}`}
           >

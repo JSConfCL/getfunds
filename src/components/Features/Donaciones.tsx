@@ -103,11 +103,11 @@ const donationOptions = [
   },
 ];
 
-export const Donaciones = () => {
+export const DonationSection = () => {
   return (
     <div className="w-full bg-white py-20">
-      <div className="container flex flex-col gap-6 text-center md:grid lg:mt-0 lg:grid lg:grid-cols-12 lg:gap-4 lg:text-left">
-        <div className="col-span-12 flex flex-col gap-4 lg:col-span-3">
+      <div className="container flex flex-col gap-6 text-center md:grid lg:mt-0 lg:grid lg:grid-cols-12 lg:text-left">
+        <div className="col-span-12  flex flex-col gap-4 lg:col-span-3">
           <h2 id="donations" className="text-3xl font-bold lg:text-4xl">
             <span className="after:whitespace-pre after:content-['\a']">
               Donar,
@@ -146,7 +146,7 @@ export const Donaciones = () => {
               size={donationOption.size}
               href={donationOption.href}
             >
-              <div className="text-3xl font-bold transition-all lg:text-4xl xl:text-5xl">
+              <div className="text-3xl font-bold transition-all xs:text-2xl lg:text-4xl xl:text-5xl">
                 {donationOption.title}
               </div>
               <div className="text-center">{donationOption.icon}</div>
