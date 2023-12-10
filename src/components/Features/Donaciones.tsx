@@ -103,7 +103,7 @@ const donationOptions = [
   },
 ];
 
-export const Donaciones = () => {
+export const DonationSection = () => {
   return (
     <div className="w-full bg-white py-20">
       <div className="container flex flex-col gap-6 text-center md:grid lg:mt-0 lg:grid lg:grid-cols-12 lg:text-left">
