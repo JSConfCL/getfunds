@@ -3,7 +3,7 @@ import React from "react";
 import { getMetaData } from "@/lib/metadata";
 const title = "Gracias por donar | JSCL";
 const description =
-  "Gracias por donar a JavaScript Chile | Ayudando a promover el desarrollo tecnológico y el apredizaje en Chile.";
+  "Gracias por donar a JavaScript Chile | Ayudando a promover el desarrollo tecnológico y el aprendizaje en Chile.";
 
 export const metadata = getMetaData({ title, description })
 

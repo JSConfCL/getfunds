@@ -29,7 +29,7 @@ export const Intro = () => {
             JSChile es una corporación sin fines de lucros.
           </h3>
           <h2 className="text-xl font-bold lg:text-3xl">
-            Ayudanos a promover el desarrollo tecnológico y el apredizaje en
+            Ayudanos a promover el desarrollo tecnológico y el aprendizaje en
             Chile.
           </h2>
         </div>

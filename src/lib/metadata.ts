@@ -1,6 +1,6 @@
 export const getMetaData = ({
   title = 'Donaciones y Sponsors | JSCL',
-  description = 'Donar a JavaScript Chile | Ayudanos a promover el desarrollo tecnológico y el apredizaje en Chile.',
+  description = 'Donar a JavaScript Chile | Ayudanos a promover el desarrollo tecnológico y el aprendizaje en Chile.',
   url = 'https://jschile.org',
   images = '/og-image.png'
 }) => (
